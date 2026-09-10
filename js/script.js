@@ -1,0 +1,235 @@
+/* =========================================
+   VENTAS ELDA
+   JAVASCRIPT
+========================================= */
+
+
+/* =========================================
+   CONFIGURACIÓN
+========================================= */
+
+const configuracion = {
+
+    whatsapp: "527226276427",
+
+   redes: {
+    facebook: "https://www.facebook.com/share/19MQwCwmTh/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/eldafabila?stkn=NHA4NmZyaWozcG5o"
+}
+
+};
+
+
+/* =========================================
+   CATÁLOGOS
+   SOLO CAMBIA LOS ENLACES CUANDO
+   LOS CATÁLOGOS SE ACTUALICEN
+========================================= */
+
+const catalogos = [
+
+    {
+        marca: "Arabela",
+        descripcion: "Consulta el catálogo actual de productos Arabela.",
+        icono: "ARA",
+        url: "https://viewer.ipaper.io/arabela/MX/2026/completo/MX-C20-2026/"
+    },
+
+    {
+        marca: "Natura",
+        descripcion: "Descubre las novedades y productos del catálogo Natura.",
+        icono: "NAT",
+        url: "https://mx.natura.digital-catalogue.com/mx/2026/13/revista/ciclo-13/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjEzIiwic2Vzc2lvbklkIjoiOGNjNmI4NTAtMzY5MS00YmZjLTkwYzEtNDI3OGYxN2UyYmNmIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxMyIsImlkIjoiYWhrZ3ZzNGx2djRscnoxYWFnanhnYnI4NXlnb2Fqcm51ZThkc2U2ZyJ9fQ==&page=1"
+    },
+
+    {
+        marca: "Avon",
+        descripcion: "Consulta el catálogo Avon y conoce sus productos.",
+        icono: "AVO",
+        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/13/revista/avon/view/index.html?id_consultora=5884368&utm_term=web?representante=5884368&page=1"
+    },
+
+    {
+        marca: "Casa & Estilo",
+        descripcion: "Explora productos para tu hogar y estilo.",
+        icono: "CASA",
+        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/13/revista/casa-estilo/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjEzIiwic2Vzc2lvbklkIjoiNTY3NThlZTYtNTVlYS00MjFkLTg1YzEtYzViMWY3Mzk2NjRjIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxMyIsImlkIjoibjFuY2I4dHVmcHdkM2RpdnNnaWQxeG05eHZpM2puYXEzdWhveWY5cCJ9fQ==&page=1"
+    },
+
+    {
+        marca: "Price Shoes",
+        descripcion: "Consulta el catálogo de Price Shoes disponible.",
+        icono: "PS",
+        url: "https://descarga.catalogospriceshoes.com/1345253.pdf"
+    },
+
+    {
+        marca: "Fuller",
+        descripcion: "Consulta las novedades de Fuller México.",
+        icono: "FUL",
+        url: "https://www.facebook.com/fuller.mexico.oficial/videos/-nuevos-b%C3%A1sicos-nuevos-favoritos-la-campa%C3%B1a-c11-lleg%C3%B3-con-novedades-para-tu-piel/1846855639631914/?rdid=TuU7VqwJ6yNSEdec"
+    }
+
+];
+
+
+/* =========================================
+   MOSTRAR CATÁLOGOS
+========================================= */
+
+const catalogGrid = document.getElementById("catalogGrid");
+
+
+function mostrarCatalogos() {
+
+    if (!catalogGrid) {
+        return;
+    }
+
+    catalogGrid.innerHTML = "";
+
+    catalogos.forEach(catalogo => {
+
+        const tarjeta = document.createElement("article");
+
+        tarjeta.className = "catalog-card";
+
+        tarjeta.innerHTML = `
+            <div class="catalog-brand">
+                ${catalogo.icono}
+            </div>
+
+            <h3>
+                ${catalogo.marca}
+            </h3>
+
+            <p>
+                ${catalogo.descripcion}
+            </p>
+
+            <a
+                href="${catalogo.url}"
+                class="catalog-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver catálogo →
+            </a>
+        `;
+
+        catalogGrid.appendChild(tarjeta);
+
+    });
+
+}
+
+
+/* =========================================
+   MENÚ MÓVIL
+========================================= */
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", () => {
+
+        mainNav.classList.toggle("active");
+
+    });
+
+
+    const navLinks = mainNav.querySelectorAll("a");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mainNav.classList.remove("active");
+
+        });
+
+    });
+
+}
+
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
+
+const facebookLink = document.getElementById("facebookLink");
+const instagramLink = document.getElementById("instagramLink");
+
+
+function configurarRedes() {
+
+    if (facebookLink) {
+
+        if (configuracion.redes.facebook) {
+
+            facebookLink.href = configuracion.redes.facebook;
+
+        } else {
+
+            facebookLink.addEventListener("click", event => {
+
+                event.preventDefault();
+
+                alert(
+                    "El enlace de Facebook todavía no ha sido configurado."
+                );
+
+            });
+
+        }
+
+    }
+
+
+    if (instagramLink) {
+
+        if (configuracion.redes.instagram) {
+
+            instagramLink.href = configuracion.redes.instagram;
+
+        } else {
+
+            instagramLink.addEventListener("click", event => {
+
+                event.preventDefault();
+
+                alert(
+                    "El enlace de Instagram todavía no ha sido configurado."
+                );
+
+            });
+
+        }
+
+    }
+
+}
+
+
+/* =========================================
+   AÑO AUTOMÁTICO
+========================================= */
+
+const currentYear = document.getElementById("currentYear");
+
+if (currentYear) {
+
+    currentYear.textContent = new Date().getFullYear();
+
+}
+
+
+/* =========================================
+   INICIALIZACIÓN
+========================================= */
+
+mostrarCatalogos();
+configurarRedes();
