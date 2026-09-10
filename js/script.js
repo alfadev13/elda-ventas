@@ -60,14 +60,14 @@ const catalogos = [
         marca: "Price Shoes",
         descripcion: "Consulta el catálogo de Price Shoes disponible.",
         icono: "PS",
-        url: "https://descarga.catalogospriceshoes.com/1345253.pdf"
+        url: "https://www.priceshoes.com/"
     },
 
     {
         marca: "Fuller",
         descripcion: "Consulta las novedades de Fuller México.",
         icono: "FUL",
-        url: "https://www.facebook.com/fuller.mexico.oficial/videos/-nuevos-b%C3%A1sicos-nuevos-favoritos-la-campa%C3%B1a-c11-lleg%C3%B3-con-novedades-para-tu-piel/1846855639631914/?rdid=TuU7VqwJ6yNSEdec"
+        url: "catalogos/fuller-c11.pdf"
     }
 
 ];
