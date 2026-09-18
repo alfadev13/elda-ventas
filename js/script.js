@@ -39,21 +39,21 @@ const catalogos = [
         marca: "Natura",
         descripcion: "Descubre las novedades y productos del catálogo Natura.",
         icono: "NAT",
-        url: "https://mx.natura.digital-catalogue.com/mx/2026/13/revista/ciclo-13/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjEzIiwic2Vzc2lvbklkIjoiOGNjNmI4NTAtMzY5MS00YmZjLTkwYzEtNDI3OGYxN2UyYmNmIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxMyIsImlkIjoiYWhrZ3ZzNGx2djRscnoxYWFnanhnYnI4NXlnb2Fqcm51ZThkc2U2ZyJ9fQ==&page=1"
+        url: "https://mx.natura.digital-catalogue.com/mx/2026/14/revista/ciclo-14/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjE0Iiwic2Vzc2lvbklkIjoiM2I5ZmVlY2ItZjA3Mi00OWRlLTg0N2MtZWI5OWIzZjVlNTFiIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxNCIsImlkIjoiMWplbDh4ZDJoZm1zNGhudnU0anZzbHNmb2lvZGVlcmNsYjJsZ2lxNiJ9fQ==&page=1"
     },
 
     {
         marca: "Avon",
         descripcion: "Consulta el catálogo Avon y conoce sus productos.",
         icono: "AVO",
-        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/13/revista/avon/view/index.html?id_consultora=5884368&utm_term=web?representante=5884368&page=1"
+        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/14/revista/avon/view/index.html?id_consultora=5884368&utm_term=web?representante=5884368"
     },
 
     {
         marca: "Casa & Estilo",
         descripcion: "Explora productos para tu hogar y estilo.",
         icono: "CASA",
-        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/13/revista/casa-estilo/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjEzIiwic2Vzc2lvbklkIjoiNTY3NThlZTYtNTVlYS00MjFkLTg1YzEtYzViMWY3Mzk2NjRjIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxMyIsImlkIjoibjFuY2I4dHVmcHdkM2RpdnNnaWQxeG05eHZpM2puYXEzdWhveWY5cCJ9fQ==&page=1"
+        url: "https://mx.natura-avon.digital-catalogue.com/mx/2026/14/revista/casa-estilo/view/index.html?id_consultora=5884368&utm_term=web&info=eyJ1c2VyIjp7ImN5Y2xlIjoiMjAyNjE0Iiwic2Vzc2lvbklkIjoiMWEyZDY4OTctZGY3OC00YzNmLTkxMWEtNzRjMTg5NTU4MTJmIiwic2hvcElkIjpudWxsfSwibWFnYXppbmUiOnsieWVhciI6IjIwMjYiLCJjeWNsZSI6IjIwMjYxNCIsImlkIjoiNDN0ZGhmYmtlZnh2bWxhcTJ6cjEyc3Z5NWVtOHB0bHJqaDBzeXducSJ9fQ=="
     },
 
     {
@@ -67,7 +67,7 @@ const catalogos = [
         marca: "Fuller",
         descripcion: "Consulta las novedades de Fuller México.",
         icono: "FUL",
-        url: "catalogos/fuller-c11.pdf"
+        url: "catalogos/fuller-c12.pdf"
     }
 
 ];
