@@ -32,7 +32,7 @@ const catalogos = [
         marca: "Arabela",
         descripcion: "Consulta el catálogo actual de productos Arabela.",
         icono: "ARA",
-        url: "https://viewer.ipaper.io/arabela/MX/2026/completo/MX-C20-2026/"
+        url: "https://viewer.ipaper.io/arabela/MX/2026/completo/MX-C21-2026"
     },
 
     {
